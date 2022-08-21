@@ -23,9 +23,13 @@ function playerExpense() {
     const playerExpenses = totalPlayer * playerRate;
     return playerExpenses;
 }
-
 //show Player expense
 document.getElementById('player-total-rate-btn').addEventListener('click', function () {
     setValue('player-total-rate', playerExpense());
 })
-
+//calculate Total expense 
+document.getElementById('total-btn').addEventListener('click', function () {
+    const totalExpense = getFieldValue('manager-rate') + getFieldValue('Coach-rate') + playerExpense();
+    //show Total expense
+    setValue('total-expense', totalExpense);
+})
