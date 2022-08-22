@@ -30,6 +30,8 @@ document.getElementById('player-total-rate-btn').addEventListener('click', funct
 //calculate Total expense 
 document.getElementById('total-btn').addEventListener('click', function () {
     const totalExpense = getFieldValue('manager-rate') + getFieldValue('Coach-rate') + playerExpense();
+    //display player expense (optional)
+    setValue('player-total-rate', playerExpense());
     //show Total expense
     setValue('total-expense', totalExpense);
 })
