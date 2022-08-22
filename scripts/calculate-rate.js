@@ -15,7 +15,7 @@ function setValue(id, value) {
     const displayId = document.getElementById(id);
     displayId.innerText = value;
 }
-//calculate Player
+//calculate Player  pense
 function playerExpense() {
     const playersList = document.getElementById('selected-players');
     const totalPlayer = playersList.childElementCount;
