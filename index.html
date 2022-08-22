@@ -10,11 +10,44 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- Tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        lobster: "'Lobster Two', cursive",
+                    },
+                },
+            },
+        }
+    </script>
+
+
 </head>
 
 <body class="bg-neutral-900 text-white">
     <header>
-
+        <div class="mx-auto w-full relative py-28">
+            <div class="w-2/5 mx-auto text-center">
+                <h1 class="text-8xl text-orange-600 font-lobster mb-3">Build Your Team</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam, enim nisi beatae a
+                    delectus, consectetur reprehenderit nihil voluptatem quaerat nemo consequuntur ab repellat
+                    distinctio dolore ad. Obcaecati, laboriosam quidem!</p>
+            </div>
+            <div class="absolute left-0 right-auto bottom-0 top-auto">
+                <img src="assets/Group 12.png" alt="" class="h-96">
+            </div>
+            <div class="absolute left-auto right-0 bottom-0 top-auto">
+                <img src="assets/banner2.png" alt="">
+            </div>
+        </div>
     </header>
     <main>
         <section>
