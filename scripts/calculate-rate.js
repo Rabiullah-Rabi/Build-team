@@ -1,11 +1,11 @@
 //function for collecting value from input field
 function getFieldValue(fieldId) {
     const input = document.getElementById(fieldId);
-    const rate = input.value;
-    if (rate < 0) {
+    let rate = input.value;
+    if (rate < 0 || rate.length == 0) {
         alert('Rate must be greater than 0');
+        return rate = 0;
     }
-
     else {
         return parseFloat(rate);
     }
